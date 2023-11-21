@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le titre de la page -->
+    <title>cour Html</title>
+    <!-- Icon de l'onglet -->
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1><span>&#9755;</span>titre - h1</h1>
+      <p>
+        Texte basique. <em> 'em'pour l'italique voici un texte en italique</em>.
+        <strong>et strong un texte en gras</strong>.
+        <span>L'element en span ne revient pas à la ligne</span>
+      </p>
+      .
+      <p>
+        le "p" paragraphe et Lorem ipsum integre le texete . dolor sit amet
+        consectetur adipisicing elit. Maxime iure impedit, aliquid dolore porro
+        inventore deserunt libero similique voluptatem repudiandae dolor.
+      </p>
+    </header>
+    <section>
+      <!-- integres les photos -->
+      <div>
+        <h2>Photo - titre - h2</h2>
+        <img src="photo grece.jpg.jpg" height="900" alt="image-grece " />
+      </div>
+      <!-- cree une liste 1)non ordonnee et 2)ordonnee  -->
+      <div>
+        <h3>Liste - titre - h3</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+        </ul>
+        <ol>
+          <li>OL = order list</li>
+          <li>OL = order list</li>
+          <li>OL = order list</li>
+        </ol>
+      </div>
+      <!-- les tableaux -->
+      <div>
+        <h4>Les tableaux - titre - h4</h4>
+        <table border="1" width="50%">
+          <!-- Légende -->
+          <caption>
+            Population d'europe
+          </caption>
+          <!-- En - tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <!-- corp du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- integre les liens clickable -->
+      <div>
+        <h5>Liens clickable - titre - h5</h5>
+        <a href="https://htmlcheatsheet.com/" target="_blank"
+          >HTML Cheat sheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Icones en HTML</a
+        >
+      </div>
+      <!-- integre une video -->
+      <div>
+        <h6>Video - titre - h6</h6>
+        <video src="video.mp4.mp4" height="400" autoplay loop muted></video>
+      </div>
+    </section>
+    <br>
+    <!-- les formulaire -->
+    <section>
+      <h2>formulaire</h2>
+      <form action="/ation.php" methode="post">
+        <label for="name">Nom </label><input id="name" type="text" placeholder="entrez votre nom"><br>
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" step="1 valu="18"><br>
+
+        <!-- input select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+        </select><br>
+        <!-- input radio -->
+        <div>
+        <input type="radio" name="type" id="human">
+        <label for="human">Humain</label>
+        
+        <input type="radio" name="type" checked id="Dog">
+        <label for="dog">Chien</label>
+        
+        <input type="radio" name="type" id="cat">
+        <label for="cat">Chat</label>
+      </div>
+      <textarea cols="30" rows="10" placeholder="Entrez votre demande ici"></textarea><br>
+      
+      <!-- input checkbox -->
+      <label><input type="checkbox" />accepter les CGV</label><br>
+      <input type="submit" value="valider">
+    </form>
+    </section>
+    <br>
+    <!-- Mail et envoi de fichier -->
+    <footer>
+      <a href="mailto:ahmed.bti@outlook.fr">ecrivez moi !</a>
+      <br>
+      <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
